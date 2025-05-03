@@ -440,6 +440,35 @@ footer {
 
     .location-container {
         flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0 4%;
+    }
+
+    .location-info {
+        width: 100%;
+        padding: 0 0 20px 0;
+        box-sizing: border-box;
+        word-break: break-word; /* Agar teks panjang turun ke bawah */
+    }
+
+    .address-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    .address-icon {
+        margin-right: 1rem;
+        font-size: 1.5rem;
+        color: var(--accent);
+        flex-shrink: 0;
+    }
+
+    .address-text {
+        width: 100%;
+        word-break: break-word;
     }
 
     .map {
