@@ -14,10 +14,14 @@
     scroll-behavior: smooth;
 }
 
-body {
+
+body, html {
     background-color: var(--light);
     color: var(--dark);
     line-height: 1.6;
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
 }
 
 /* Header & Navigation */
