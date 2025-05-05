@@ -20,15 +20,15 @@ document.addEventListener('DOMContentLoaded', function () {
         const sr = ScrollReveal({
             origin: 'top',
             distance: '60px',
-            duration: 2000,
-            delay: 80
+            duration: 800,
+            delay: 60,
         });
 
         sr.reveal('.hero-content', {});
-        sr.reveal('.location-info', { delay: 300 });
-        sr.reveal('.map', { delay: 400 });
+        sr.reveal('.location-info', { delay: 200 });
+        sr.reveal('.map', { delay: 300 });
         sr.reveal('.menu-card', { interval: 100 });
-        sr.reveal('.about-card', { interval: 300 });
+        sr.reveal('.about-card', { interval: 200 });
     }
 });
 
