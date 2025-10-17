@@ -347,7 +347,8 @@ transform: translateY(-5px);
   }
 
   .galery-item {
-    max-width: 100%;
+    max-width: 88%;
+    margin: 5px auto;
   }
 
   .galery-item span {
@@ -356,10 +357,27 @@ transform: translateY(-5px);
 }
 
 /* 🔺 Menu */
+/* Ganti selector .menu yang kedua (yang mengatur section utama) */
 .menu {
-  text-align: center;
-  margin: 0;
-  padding: 0 20px;
+    text-align: center;
+    margin:  0;
+    
+    /* Hapus background lama: background: rgba(250, 250, 250, 1); */
+    
+    /* PENAMBAHAN BACKGROUND BARU */
+    background: url('img/menuNew.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    /* OVERLAY: Putih Semi-Transparan (80%) */
+    /* Overlay putih agar teks gelap (#d10000, #282525ff) tetap terbaca */
+    background-color: rgba(75, 74, 74, 0.8); 
+    background-blend-mode: overlay; 
+    
+    padding: 100px 20px; 
+    color: #fff;
 }
 
 .menu h2 {
@@ -383,18 +401,9 @@ transform: translateY(-5px);
 
 .menu-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 490px));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 450px));
   gap: 20px;
   justify-content: center;
-}
-
-/* Setiap kartu menu */
-.menu {
-  text-align: center;
-  margin:  0;
-  padding: 100px 20px; /* tambahin sedikit biar napas */
-  background: rgba(250, 250, 250, 1);
-  color: #fff; /* biar teks tetap terbaca */
 }
 
 .menu-card:hover {
