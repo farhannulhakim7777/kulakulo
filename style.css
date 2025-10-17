@@ -74,6 +74,30 @@ header {
   font-size: 1.5rem;
 }
 
+/* 1. Pengaturan Dasar Navbar (Wajib agar Sticky) */
+#navbar {
+    position: fixed; /* Membuat Navbar selalu terlihat saat scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Pastikan selalu di atas konten lain */
+    /* Tambahkan transisi agar perubahan warna dan shadow halus */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Catatan: Tambahkan background default sesuai warna awal navbar Anda di sini */
+    /* background-color: transparent; */ 
+}
+
+/* 2. Style Ketika Navbar Sudah Di-Scroll */
+#navbar.scrolled {
+    /* Memberikan latar belakang putih semi-transparan yang modern */
+    background-color: rgba(255, 255, 255, 0.95); 
+    /* Menambahkan bayangan halus agar terangkat dari konten */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    /* Opsional: Ubah warna link/teks di navbar jika background awal Anda gelap */
+    /* Contoh: */
+    /* color: #333; */
+}
+
 /* 🔺 Hero */
 .hero {
   height: 100vh;
@@ -526,9 +550,25 @@ transform: translateY(-5px);
 }
 
 section.location {
- background: rgba(250, 250, 250, 1);
-  padding: 60px 0;
-  color: #fff;
+    /* Hapus background lama: background: rgba(250, 250, 250, 1); */
+    
+    /* BACKGROUND GAMBAR */
+    background: url('img/address.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    
+    /* MODIFIKASI 1: OVERLAY TERANG */
+    /* Overlay Putih 90% transparan agar gambar terlihat terang */
+    background-color: rgba(127, 127, 127, 0.9); 
+    background-blend-mode: overlay; 
+    
+    padding: 60px 0;
+    
+    /* MODIFIKASI 2: WARNA TEKS GELAP */
+    /* Mengganti teks menjadi gelap agar terbaca di atas background terang */
+    color: #1a1a1a; 
 }
 
 
